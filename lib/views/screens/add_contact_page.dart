@@ -61,7 +61,7 @@ class _AddContactState extends State<AddContact> {
         title: const Text(
           "Add",
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.grey,
             fontSize: 22,
             fontWeight: FontWeight.bold,
           ),
@@ -143,6 +143,7 @@ class _AddContactState extends State<AddContact> {
                       },
                       child: Icon(
                         Icons.add,
+                        color: Colors.black,
                       ),
                     ),
                   ],

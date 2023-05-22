@@ -1,1 +1,1 @@
-String iconPath = "assets/image/";
+String iconPath = "assets/images/";

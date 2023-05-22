@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:contact_diary_viva/utils/rautes_page.dart';
 import 'package:contact_diary_viva/views/screens/add_contact_page.dart';
+import 'package:contact_diary_viva/views/screens/splesh_screen_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -23,14 +24,6 @@ class _MyappState extends State<Myapp> {
   bool isGrid = false;
   bool isdark = false;
   bool black = false;
-  // static List<Contacts> allContacts = [
-  //   Contacts(
-  //     contact: '9909954576',
-  //     email: 'rajavi@gmail.com',
-  //     firstName: 'rajavi',
-  //     lastName: 'prajapati',
-  //   )
-  // ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -64,6 +57,8 @@ class _MyappState extends State<Myapp> {
         initialRoute: MyRoutes.splashScreen,
         routes: {
           MyRoutes.add_contact_page: (context) => AddContact(),
+          MyRoutes.splashScreen: (contact) => SplashScreen(),
+          // MyRoutes.splashScreen : (contact) => (),
           MyRoutes.home: (context) => Builder(builder: (contact) {
                 return Scaffold(
                   appBar: AppBar(
@@ -171,6 +166,7 @@ class _MyappState extends State<Myapp> {
                     },
                     child: Icon(
                       Icons.add,
+                      color: Colors.black,
                     ),
                   ),
                 );

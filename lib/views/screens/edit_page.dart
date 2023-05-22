@@ -36,7 +36,7 @@ class _EditContactState extends State<EditContact> {
         title: const Text(
           "Add",
           style: TextStyle(
-            color: Color(0xff7d8c93),
+            // color: Color(0xff7d8c93),
             fontSize: 22,
             fontWeight: FontWeight.bold,
           ),
